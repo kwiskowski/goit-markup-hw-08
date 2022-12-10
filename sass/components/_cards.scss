@@ -1,0 +1,119 @@
+.cards__filter {
+  list-style-position: inside;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards__button {
+  height: 38px;
+  background-color: #f5f4fa;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+  border-style: none;
+  margin-right: 8px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 250ms, color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0 2px 5px #6b6b6b;
+  }
+}
+
+.cards__list {
+  list-style-position: inside;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+  gap: 30px;
+  flex-basis: 33%;
+  justify-content: space-between;
+}
+
+.cards__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 171%;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--primary-color);
+  margin: 0px;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.cards__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+  margin: 0px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-top: 4px;
+}
+
+.cards {
+  padding-top: 94px;
+}
+
+.cards__wrapper {
+  padding-bottom: 94px;
+}
+
+.cards__item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+  transition: backround-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 1px 4px 6px 0px #00000029;
+  }
+}
+
+.cards__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards__item-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards__item-wrapper:hover .cards__overlay {
+  transform: translatey(0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #2196f3;
+}
+
+.cards__description {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 24px;
+  padding-top: 49px;
+  padding-bottom: 49px;
+  padding-right: 45px;
+}

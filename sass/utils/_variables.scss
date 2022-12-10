@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #212121;
+  --secondary-color: #2196f3;
+  --background-color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-variant-alternates: normal;
+  color: var(--primary-color);
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    color: var(--secondary-color);
+  }
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+button {
+  transition: background-color 250ms, color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    color: #ffffff;
+    color: #2196f3;
+  }
+  &:hover {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
