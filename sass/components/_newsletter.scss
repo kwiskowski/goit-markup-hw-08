@@ -1,71 +1,143 @@
-.newsletter {
-  padding-top: 72px;
-  margin-left: 78px;
-}
+@media screen and (min-width: 320px) {
+  .newsletter {
+  }
 
-.newsletter__label {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: #ffffff;
-}
+  .newsletter__label {
+    font-family: Roboto;
 
-.newsletter__list {
-  list-style-position: inside;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
-}
+    font-weight: 700;
 
-.newsletter__item {
-  padding-left: 0px;
-  padding-right: 12px;
-}
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #ffffff;
+  }
 
-.newsletter__input {
-  height: 50px;
-  width: 358px;
-  border-radius: 4px;
-  background-color: #2196f300;
-  border: 1px solid #ffffff4d;
-  outline: none !important;
-}
+  .newsletter__list {
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+  }
 
-.newsletter-form {
-  padding-top: 20px;
-  display: flex;
-}
+  .newsletter__item {
+    padding-left: 0px;
+    padding-right: 12px;
+  }
 
-.newsletter__button {
-  height: 50px;
-  width: 200px;
-  border-radius: 4px;
-  background-color: var(--secondary-color);
-  position: relative;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  border: none;
-  color: var(--background-color);
-  cursor: pointer;
-  &:hover {
-    box-shadow: 0px 4px 4px 0px #00000026;
+  .newsletter__input {
+    border-radius: 4px;
+    background-color: #2196f300;
+    border: 1px solid #ffffff4d;
+    outline: none !important;
+  }
+
+  .newsletter-form {
+    padding-top: 20px;
+    display: flex;
+  }
+
+  .newsletter__button {
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    color: var(--background-color);
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 4px 4px 0px #00000026;
+    }
+  }
+
+  .newsletter__icon {
+    position: relative;
+    left: 158px;
+    bottom: 36px;
+    fill: var(--background-color);
   }
 }
 
-.newsletter__icon {
-  position: relative;
-  left: 158px;
-  bottom: 36px;
-  fill: var(--background-color);
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    padding-top: 72px;
+    margin-left: 78px;
+  }
+
+  .newsletter__label {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .newsletter__list {
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .newsletter__item {
+    padding-left: 0px;
+    padding-right: 12px;
+  }
+
+  .newsletter__input {
+    height: 50px;
+    width: 358px;
+    border-radius: 4px;
+    background-color: #2196f300;
+    border: 1px solid #ffffff4d;
+    outline: none !important;
+  }
+
+  .newsletter-form {
+    padding-top: 20px;
+    display: flex;
+  }
+
+  .newsletter__button {
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    position: relative;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    color: var(--background-color);
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 4px 4px 0px #00000026;
+    }
+  }
+
+  .newsletter__icon {
+    position: relative;
+    left: 158px;
+    bottom: 36px;
+    fill: var(--background-color);
+  }
 }

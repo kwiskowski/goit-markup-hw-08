@@ -1,55 +1,84 @@
-.our-work {
-  padding-top: 94px;
+@media screen and (min-width: 320px) {
+  .our-work {
+    display: none;
+  }
+
+  .our-work__title {
+    display: none;
+  }
+
+  .our-work__wrapper {
+    display: none;
+  }
+
+  .our-work__list {
+    display: none;
+  }
+
+  .our-work__thumb {
+    display: none;
+  }
+
+  .our-work__label {
+    display: none;
+  }
 }
 
-.our-work__title {
-  border-radius: nullpx;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--primary-color);
-  padding-bottom: 50px;
-}
+// DESKTOP
+@media screen and (min-width: 1200px) {
+  .our-work {
+    padding-top: 94px;
+  }
 
-.our-work__wrapper {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+  .our-work__title {
+    border-radius: nullpx;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary-color);
+    padding-bottom: 50px;
+  }
 
-.our-work__list {
-  list-style-position: inside;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 30px;
-  margin: 0px;
-  padding: 0px;
-}
+  .our-work__wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 
-.our-work__thumb {
-  position: relative;
-  max-height: 294px;
-}
+  .our-work__list {
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0px;
+    padding: 0px;
+  }
 
-.our-work__label {
-  position: absolute;
-  display: block;
-  width: 370px;
-  height: 70px;
-  background: #2f303acc;
-  bottom: 0;
-  margin: auto;
-  padding-top: 27px;
+  .our-work__thumb {
+    position: relative;
+    max-height: 294px;
+  }
 
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  .our-work__label {
+    position: absolute;
+    display: block;
+    width: 370px;
+    height: 70px;
+    background: #2f303acc;
+    bottom: 0;
+    margin: auto;
+    padding-top: 27px;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
 }
