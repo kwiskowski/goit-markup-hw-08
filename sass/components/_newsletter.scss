@@ -1,12 +1,16 @@
 @media screen and (min-width: 320px) {
   .newsletter {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
   }
 
   .newsletter__label {
     font-family: Roboto;
-
     font-weight: 700;
-
     letter-spacing: 0.03em;
     text-align: left;
     color: #ffffff;
@@ -18,34 +22,38 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
     padding: 0px;
   }
 
   .newsletter__item {
     padding-left: 0px;
-    padding-right: 12px;
+    padding-right: 0px;
   }
 
   .newsletter__input {
+    height: 50px;
+    width: 100%;
     border-radius: 4px;
     background-color: #2196f300;
     border: 1px solid #ffffff4d;
     outline: none !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .newsletter-form {
-    padding-top: 20px;
     display: flex;
   }
 
   .newsletter__button {
     height: 50px;
     width: 200px;
+    justify-content: center;
     border-radius: 4px;
     background-color: var(--secondary-color);
-
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
@@ -67,7 +75,7 @@
     fill: var(--background-color);
   }
 }
-
+// DESKTOP
 @media screen and (min-width: 1200px) {
   .newsletter {
     padding-top: 72px;
