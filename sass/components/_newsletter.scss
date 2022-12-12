@@ -69,12 +69,13 @@
   }
 
   .newsletter__icon {
-    position: relative;
-    left: 158px;
-    bottom: 36px;
+    position: absolute;
+    left: 215px;
+    top: 5175px;
     fill: var(--background-color);
   }
 }
+
 // DESKTOP
 @media screen and (min-width: 1200px) {
   .newsletter {
@@ -143,7 +144,7 @@
   }
 
   .newsletter__icon {
-    position: relative;
+    position: absolute;
     left: 158px;
     bottom: 36px;
     fill: var(--background-color);

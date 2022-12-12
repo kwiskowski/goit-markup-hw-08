@@ -1,20 +1,27 @@
+// General styles
+
+.clients__wrapper {
+  border-radius: [object Object]px;
+}
+
+.clients__title {
+  border-radius: nullpx;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-color);
+}
+
 @media screen and (min-width: 320px) {
   .clients {
   }
 
   .clients__wrapper {
-    border-radius: [object Object]px;
     margin-bottom: 94px;
   }
 
   .clients__title {
-    border-radius: nullpx;
-
-    font-weight: 700;
-
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--primary-color);
+    margin-bottom: 30px;
   }
 
   .clients__list {
@@ -64,18 +71,11 @@
   .clients__wrapper {
     height: 184px;
     width: 1170px;
-    border-radius: [object Object]px;
     margin-bottom: 94px;
   }
 
   .clients__title {
-    border-radius: nullpx;
     font-size: 36px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--primary-color);
     padding-bottom: 50px;
   }
 
