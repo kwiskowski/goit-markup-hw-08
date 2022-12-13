@@ -66,52 +66,27 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+// TABLET
+@media screen and (min-width: 768px) {
   .header__wrapper {
     height: 80px;
-    border-bottom: #ececec;
-    border-bottom: 1px;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0px;
-    border-bottom-style: inset;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .header__logo {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 100%;
-    letter-spacing: 0.03em;
-    color: var(--secondary-color);
-  }
-
-  .header__logo-decoration {
-    color: #000000;
-    margin-right: 47px;
   }
 
   .contact-list {
+    display: flex;
     list-style-position: inside;
     list-style-type: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    margin-left: 345px;
     padding: 0px;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items: left;
   }
 
   .contact-list__item {
+    display: block;
     margin-left: 0px;
     color: #757575;
     transition: fill, color 250ms linear;
@@ -119,18 +94,13 @@
   }
 
   .contact-list__mail {
+    display: flex;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
-    display: flex;
-    position: relative;
-    align-items: center;
-    text-align: center;
     justify-content: center;
     color: #757575;
-    margin-right: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 10px;
     transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -140,16 +110,15 @@
     font-size: 14px;
     font-weight: 500;
     display: flex;
-    position: relative;
     align-items: center;
     color: #757575;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
     transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .contact-list__icon {
+    display: flex;
     fill: #757575;
     margin-right: 10px;
     transition: fill, color 250ms linear;
@@ -157,9 +126,9 @@
   }
 
   .navigation-list {
+    display: inline-flex;
     list-style-position: inside;
     list-style-type: none;
-    display: inline-flex;
     color: var(--primary-color);
     margin-top: 0px;
     margin-bottom: 0px;
@@ -167,6 +136,7 @@
   }
 
   .navigation-list__item {
+    display: flex;
     margin-left: 46px;
     color: var(--primary-color);
     position: relative;
@@ -205,5 +175,72 @@
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1200px) {
+  .header__wrapper {
+    height: 80px;
+    border-bottom: #ececec;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    border-bottom-style: inset;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .header__logo {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+  }
+
+  .header__logo-decoration {
+    color: #000000;
+    margin-right: 47px;
+  }
+
+  .contact-list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-list__phone {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #757575;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contact-list__mail {
+    padding-bottom: 0;
+    padding-right: 30px;
+  }
+
+  .navigation-list__item {
+    margin-left: 0;
+    margin-right: 46px;
+  }
+
+  .navigation-list {
+    margin-right: 100px;
   }
 }

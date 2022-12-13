@@ -48,66 +48,6 @@
     color: var(--primary-color);
   }
 
-  // .team__portrait1 {
-  //   width: 100%;
-  //   height: 100%;
-  //   max-width: 450px;
-  //   max-height: 460px;
-  //   background-image: url(/images/home/mobile/portrait1.jpg);
-  // }
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .team__portrait {
-  //     background-image: url(../images/home/mobile/portrait1X2.jpg);
-  //   }
-  // }
-
-  // .team__portrait2 {
-  //   width: 100%;
-  //   height: 100%;
-  //   max-width: 450px;
-  //   max-height: 460px;
-  //   background-image: url(/images/home/mobile/portrait2.jpg);
-  // }
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .team__portrait {
-  //     background-image: url(../images/home/mobile/portrait2X2.jpg);
-  //   }
-  // }
-
-  // .team__portrait3 {
-  //   width: 100%;
-  //   height: 100%;
-  //   max-width: 450px;
-  //   max-height: 460px;
-  //   background-image: url(/images/home/mobile/portrait3.jpg);
-  // }
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .team__portrait {
-  //     background-image: url(../images/home/mobile/portrait3X2.jpg);
-  //   }
-  // }
-
-  // .team__portrait4 {
-  //   width: 100%;
-  //   height: 100%;
-  //   max-width: 450px;
-  //   max-height: 460px;
-  //   background-image: url(/images/home/mobile/portrait4.jpg);
-  // }
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .team__portrait {
-  //     background-image: url(../images/home/mobile/portrait4X2.jpg);
-  //   }
-  // }
-
   .team__description {
     font-weight: 400;
     line-height: 100%;
@@ -153,7 +93,19 @@
     }
   }
 }
+// TABLET
+@media screen and (min-width: 768px) {
+  .team__members {
+    width: 354px;
+    height: auto;
+  }
 
+  .team__list {
+    flex-direction: row;
+    grid-gap: 30px;
+    flex-wrap: wrap;
+  }
+}
 // DESKTOP
 @media screen and (min-width: 1200px) {
   .team {
@@ -191,12 +143,7 @@
 
   .team__members {
     width: 270px;
-    height: 428px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
+    height: auto;
     background-color: #ffffff;
     box-shadow: 0px 2px 1px 0px #00000033;
   }
@@ -254,5 +201,10 @@
       fill: #eeeeee;
       background-color: #2196f3;
     }
+  }
+
+  .team__portrait {
+    width: auto;
+    height: 100%;
   }
 }
